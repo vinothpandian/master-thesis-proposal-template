@@ -1,0 +1,169 @@
+\documentclass[10pt,a4paper]{article}
+
+\input{classicthesis-proposal-config}
+
+
+% Set these values
+\newcommand{\myTitle}{Title: The one-line description of my Master thesis\xspace}
+
+\newcommand{\myName}{Name\xspace}
+\newcommand{\myUni}{University\xspace}
+\newcommand{\myLocation}{City, Country\xspace}
+\newcommand{\myEmail}{mail@univeristy.com\xspace}
+
+\newcommand{\myAdvisorName}{Advisor Name\xspace}
+\newcommand{\myAdvisorUni}{Advisor University\xspace}
+\newcommand{\myAdvisorLocation}{Advisor City, Country\xspace}
+\newcommand{\myAdvisorEmail}{advisor@univeristy.com\xspace}
+
+
+% DO NOT CHANGE  THESE
+%==============
+\hypersetup{%
+    colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,%
+    breaklinks=true, pageanchor=true,%
+    pdfpagemode=UseNone, %
+    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
+    hypertexnames=true, pdfhighlight=/O,%
+    urlcolor=CTurl, linkcolor=CTlink, citecolor=CTcitation, %
+    pdftitle={\myTitle},%
+    pdfauthor={\textcopyright\ \myName},%
+    pdfsubject={},%
+    pdfkeywords={},%
+    pdfcreator={pdfLaTeX},%
+    pdfproducer={LaTeX with hyperref and classicthesis}%
+}
+
+\addbibresource{References.bib}
+
+\begin{document}
+    \pagestyle{plain}
+    \title{\color{CTtitle}\rmfamily\normalfont\spacedallcaps{\myTitle}}
+    \author{ \normalsize \spacedallcaps{\myName} }
+    \affil{ \vspace{-8pt} \small \myUni, \\ \myLocation \\ {\em \myEmail} }
+    \author{ \medskip  {\small \em Advisor} \\ \smallskip {\normalsize \myAdvisorName}}
+    \affil{ \vspace{-8pt} \small \myAdvisorUni, \\ \myAdvisorLocation \\ {\em \myAdvisorEmail}}
+    \date{ \medskip \small \today} 
+    \maketitle    
+    \medskip
+    
+    % START EDITING FROM BELOW
+    %==============
+        
+    \begin{abstract}
+        \noindent 
+        %Write abstract below
+        \lipsum[1] Just a test. \footnote{This is a footnote.}
+    \end{abstract}
+    
+    \section{Introduction}
+    % Problem domain (State of the world...)
+    % Issue or Research gap (the big BUT...)
+    % Proposal (therefore I did...)
+    % Key findings (I found...)
+    % Contributions (what I am giving to research community...)
+    Test citation \cite{feynman:1985}
+    \lipsum[1-2]
+    
+    \section{Literature Review}
+    % Relevant research in last 5 year (only list seminal works from more than 5 years ago)
+    % Group relevant works into themes (subsections)
+    % In paragraphs, each para stating
+        % What did they do?
+        % What did they find?
+        % How is yours different?
+    \lipsum[2]
+    
+    \subsection{Theme 1}
+    \lipsum[7-8]
+        
+    \subsection{Theme 2}
+    \lipsum[1-3]
+    
+    \subsection{Theme 3}
+    \lipsum[3-5]
+    
+    \section{Research Gap}
+    % In few lines, summarize the research gap from literature review
+    \lipsum[4][1-6]
+    
+    \section{Aim of the Thesis}
+    % In few lines, specify the aim of the thesis and how you are scoping it
+    \lipsum[5][2-6]
+    
+    \section{Research Questions \& Contributions}
+    % In a list, point out your research questions and contributions, usually 2 to 3
+    \lipsum[1][1-4]
+    \begin{description}
+        \item[\textit{RQ1}] \lipsum[2][1]
+        \item[\textit{RQ2}] \lipsum[3][1]
+    \end{description}
+
+    \lipsum[2][1-4]
+    \begin{description}
+        \item[\textit{RC1}] \lipsum[2][1]
+        \item[\textit{RC2}] \lipsum[3][1]
+    \end{description}
+       
+    \section{Proposed Solution}
+    %  List or describe your proposed solution. Figures will help.
+    \lipsum[1-4]
+    
+    \begin{figure}[!hbt]
+        \centering
+        \includegraphics[width=0.7\linewidth]{gfx/example_1}
+        \caption{This is an example figure}
+        \label{fig:example1}
+    \end{figure}    
+    
+    \section{Evaluation}
+    % How do you justify that your system works.
+    % Usually, in two ways: system evaluation (accuracy, precision..) and human evaluation (usability)
+    \lipsum[1-1]
+    
+    \section{Benefit}
+    %-who is it benefiting and how ?
+    \lipsum[1-1]
+    
+    
+    
+    \section{Timeline}
+    % Your proposed timeline of how you will finish your thesis within 6 months
+    
+    \begin{table}[!hbt]
+        \begin{tabularx}{\textwidth}{p{50mm} *{12}{W}}		
+            \noalign{\hrule height 1pt}
+            \centering \multirow{2}{*}{Activity}&\multicolumn{12}{c}{Months}\\
+            \cline{2-13}
+            &1&&2&&3&&4&&5&&6\\
+            \hline
+            1. Literature Review & \cellcolor{CTtitle} &   &   &   &   &   &   &   &   &   &   &   \\ 
+            2. Preliminary study&&\multicolumn{2}{c}{\cellcolor{CTtitle}}&&&\\
+            3. Dataset generation&&&&\multicolumn{3}{c}{\cellcolor{CTtitle}}&\\
+            4. Development&&&&&&&\multicolumn{3}{c}{\cellcolor{CTtitle}}&\\
+            5. Evaluation&&&&&&\multicolumn{5}{c}{\cellcolor{CTtitle}}\\
+            6. Documentation&&&&&&&&\multicolumn{4}{c}{\cellcolor{CTtitle}}\\
+            \noalign{\hrule height 1pt}
+        \end{tabularx}
+    \end{table}
+    
+    
+    \section{Conclusion}
+    % Affirm how you are going to deliver your claims
+    % Summarize your contribution
+    % Key points to take away
+    % Report as if it is a press release of your work
+    \lipsum[1-1]
+    
+    %    DO NOT CHANGE BELOW
+    
+    \defbibheading{bibintoc}[\bibname]{%
+        \manualmark
+        \markboth{\spacedlowsmallcaps{References}}{\spacedlowsmallcaps{References}}%
+        \section*{References}%
+    }
+    \printbibliography[heading=bibintoc]
+    
+    
+    
+\end{document}
